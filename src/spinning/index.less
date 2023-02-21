@@ -1,0 +1,22 @@
+.sp-spinning {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+  opacity: 0.4;
+  pointer-events: auto;
+
+  &-visible {
+    visibility: visible;
+  }
+  &-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    z-index: -99;
+  }
+}

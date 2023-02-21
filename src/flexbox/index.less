@@ -1,0 +1,172 @@
+.aui-flexbox {
+  display: flex;
+
+  &-inline {
+    display: inline-flex;
+    width: auto;
+  }
+  &-block {
+    display: flex;
+    width: auto;
+    min-width: 100%;
+  }
+
+  &-direction {
+    &-initial {
+      flex-direction: initial;
+    }
+    &-inherit {
+      flex-direction: inherit;
+    }
+    &-unset {
+      flex-direction: unset;
+    }
+    &-revert {
+      flex-direction: revert;
+    }
+    &-row {
+      flex-direction: row;
+    }
+    &-row-reverse {
+      flex-direction: row-reverse;
+    }
+    &-column {
+      flex-direction: column;
+    }
+    &-column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-wrap {
+    &-initial {
+      flex-wrap: initial;
+    }
+    &-unset {
+      flex-wrap: unset;
+    }
+    &-revert {
+      flex-wrap: revert;
+    }
+    &-wrap {
+      flex-wrap: wrap;
+    }
+    &-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    &-nowrap {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &-align {
+    &-normal {
+      align-items: normal;
+    }
+    &-stretch {
+      align-items: stretch;
+    }
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: start;
+    }
+    &-end {
+      align-items: end;
+    }
+    &-flex-start {
+      align-items: flex-start;
+    }
+    &-flex-end {
+      align-items: flex-end;
+    }
+    &-baseline {
+      align-items: baseline;
+    }
+    &-inherit {
+      align-items: inherit;
+    }
+    &-initial {
+      align-items: initial;
+    }
+    &-revert {
+      align-items: revert;
+    }
+    &-unset {
+      align-items: unset;
+    }
+  }
+
+  &-justify {
+    &-initial {
+      justify-content: initial;
+    }
+    &-inherit {
+      justify-content: inherit;
+    }
+    &-unset {
+      justify-content: unset;
+    }
+    &-revert {
+      justify-content: revert;
+    }
+
+    &-normal {
+      justify-content: normal;
+    }
+
+    &-left {
+      justify-content: left;
+    }
+    &-right {
+      justify-content: right;
+    }
+    &-start {
+      justify-content: start;
+    }
+    &-end {
+      justify-content: end;
+    }
+    &-flex-start {
+      justify-content: flex-start;
+    }
+    &-center {
+      justify-content: center;
+    }
+    &-flex-end {
+      justify-content: flex-end;
+    }
+
+    &-space-around {
+      justify-content: space-around;
+    }
+    &-space-between {
+      justify-content: space-between;
+    }
+    &-space-evenly {
+      justify-content: space-evenly;
+    }
+    &-stretch {
+      justify-content: stretch;
+    }
+  }
+
+  &-item {
+    min-width: 0;
+    min-height: 0;
+
+    &-normal {
+      flex: 0 0 auto;
+    }
+
+    &-flex {
+      flex: 1 1 0%;
+      min-width: 0;
+    }
+
+    &-auto {
+      flex: auto;
+    }
+  }
+}
