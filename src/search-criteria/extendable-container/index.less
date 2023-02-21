@@ -1,0 +1,33 @@
+.search-criteria-extend-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  gap: 1px 5px;
+
+  &-inline {
+    display: inline-flex;
+
+    .search-criteria-extend-container-row {
+      display: inline-flex;
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1px 5px;
+
+    // &.fixed {
+    //   @media (max-width: 1600px) and (min-width: 1200px) {
+    //     .aui-selector-content {
+    //       max-width: 110px;
+    //     }
+    //   }
+    // }
+  }
+
+  &-field {
+    flex: 0 1 auto;
+  }
+}

@@ -1,0 +1,33 @@
+.search-criteria-select {
+  width: 250px;
+
+  &-group {
+    display: block;
+    width: auto;
+    margin: 0 -10px;
+    overflow: auto;
+    max-height: 210px;
+  }
+  &-item {
+    display: block;
+    width: 100%;
+    &:hover {
+      background: #d14b26;
+      color: #fff;
+    }
+
+    &-hidden {
+      display: none;
+      height: 0;
+      pointer-events: none;
+    }
+    &-disbaled {
+      cursor: not-allowed;
+    }
+
+    &-checkbox {
+      padding: 5px 10px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.search-criteria-datepicker {
+  & &-input {
+    width: 100%;
+  }
+  & &-input-hidden {
+    height: 0px;
+    visibility: hidden;
+    position: absolute;
+    z-index: -99;
+  }
+  & &-wrapper {
+    > div {
+      position: relative !important;
+    }
+
+    .ant-picker-dropdown {
+      position: relative !important;
+      top: 0px !important;
+      left: 0px !important;
+
+      .ant-picker-panel-container {
+        box-shadow: none;
+      }
+
+      .ant-picker-range-wrapper {
+        min-width: auto !important;
+      }
+    }
+  }
+}

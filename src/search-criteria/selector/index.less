@@ -1,0 +1,81 @@
+.aui-selector {
+  position: relative;
+  display: inline-flex;
+  gap: 5px;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+  vertical-align: initial;
+  padding: 4px 10px;
+  cursor: pointer;
+
+  box-sizing: border-box;
+  transition: background-color 0.1s ease-out;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: inherit;
+  font-size: 14px;
+  font-variant: normal;
+  font-weight: 400;
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #344563;
+  height: 2.14285714em;
+  line-height: 1.42857143em;
+
+  &:hover {
+    background-color: #eee;
+  }
+  &-active {
+    background-color: #344563 !important;
+    color: #fff !important;
+  }
+  &-active &-remove {
+    &:hover {
+      color: #fff;
+    }
+  }
+  &-remove {
+    color: #bbb;
+    margin-left: 5px;
+
+    &:hover {
+      color: #344563;
+    }
+  }
+
+  &-content {
+    flex: 1 1 0%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-trigger {
+    flex: 0 1 auto;
+  }
+  &-switch {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  &-label {
+    flex: 0 1 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &-body {
+    flex: 1 1 0%;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
